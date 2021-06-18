@@ -1,0 +1,23 @@
+.weight-shipping{
+  margin:40px 0;
+.user-details{
+    max-width:500px;
+    width:100%;
+    margin:auto;
+    .user-group{
+        display:flex;
+        align-items: center;
+        flex-wrap: wrap;
+        label{
+            flex:0 0 100px;
+        }
+        input{
+            width:80%;
+        }
+        .invalid-feedback{
+            flex: 0 0 100%;
+            text-align: center;
+        }
+    }
+}
+}

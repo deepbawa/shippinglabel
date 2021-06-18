@@ -1,0 +1,13 @@
+<div class="weight-shipping">
+    <form #heroForm="ngForm" class="user-details">
+        <div class="form-group user-group">
+          <label for="weight">Weight</label>
+          <input type="number" class="form-control" 
+                 [(ngModel)]="weight" name="sweight"
+                 #sweight="ngModel" [ngClass]="{ 'is-invalid': sweight.dirty && sweight.invalid }"  required>      
+                 <div *ngIf="sweight.dirty && sweight.invalid" class="invalid-feedback">
+                    <div *ngIf="sweight.errors.required">Weights is required</div>
+                </div>
+        </div> 
+        </form>
+</div>

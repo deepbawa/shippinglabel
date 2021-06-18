@@ -1,0 +1,47 @@
+<div class="shipping-label">
+  <div class="shipping-info" *ngFor="let shipping of shippingLabelData; let i = index">
+  <div class="shipping-inside">
+    <p> From</p>
+    <div>
+      <span>Name:</span>
+      <span>{{shipping.from.name}}</span><br/>
+      <span>City:</span>
+      <span>{{shipping.from.city}}</span><br/>
+      <span>Street:</span>
+      <span>{{shipping.from.street}}</span>   <br/>   
+      <span>State:</span>
+      <span>{{shipping.from.state}}</span><br/>
+      <span>Zip:</span>
+      <span>{{shipping.from.zip}}</span>
+    </div>  
+  </div>
+  <div class="shipping-inside">
+    <p>Shipping To</p>
+      <span>Name:</span>
+      <span>{{shipping.to.name}}</span><br/>
+      <span>City:</span>
+      <span>{{shipping.to.city}}</span><br/>
+      <span>Street:</span>
+      <span>{{shipping.to.street}}</span>   <br/>   
+      <span>State:</span>
+      <span>{{shipping.to.state}}</span><br/>
+      <span>Zip:</span>
+      <span>{{shipping.to.zip}}</span>
+    </div>
+  <div class="shipping-inside-details">
+    <p>Shipping Cost</p>
+    <span>{{shipping.shippingCost}}</span>
+  </div>
+  <div class="shipping-inside-details">
+    <p>Shipping Option</p>
+    <span>
+      {{shipping.shippingOption}}
+    </span>
+  </div>
+  <div class="shipping-inside-details">
+    <p>Shipping Weight</p>
+    <span>{{shipping.weight}}</span>
+  </div>
+</div>
+
+</div>

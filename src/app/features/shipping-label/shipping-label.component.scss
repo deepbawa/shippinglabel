@@ -1,0 +1,35 @@
+.shipping-label{
+    max-width:750px;
+    width:100%;
+    margin:auto;
+    .shipping-info{
+        float: left;
+        width: 100%;
+        background-color: #dedede;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 4px;
+    }
+    p{
+        margin: 10px 0;
+        border-bottom: 2px solid #7e7979;
+        padding: 5px 0;
+    }
+    span{
+        width:50%;
+        display:inline-block;
+    }
+    .shipping-inside{
+        width: 45%;
+        float: left;
+       margin: 0 15px;
+       p{
+            text-align: center;
+        }
+    }
+    .shipping-inside-details{
+        width:30%;
+        float: left; 
+        margin:0 12px;
+    }
+}

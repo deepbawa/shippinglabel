@@ -1,0 +1,16 @@
+<div class="shipping-options">
+  <form #heroForm="ngForm" class="user-details">
+    <div class="form-group user-group">
+      <label for="name">Shipping Options</label>
+      <select class="form-control" id="shipping" name="shipping"  #shipping="ngModel"
+        [(ngModel)]="shippingVal" (change)="selectVal()" 
+         [ngClass]="{ 'is-invalid': shipping.dirty && shipping.invalid }"  required>
+          <option value="1">Ground</option>
+          <option value="2">Priority</option>
+        </select>
+        <div *ngIf="shipping.dirty && shipping.invalid" class="invalid-feedback">
+            <div *ngIf="shipping.errors.required">shipping is required</div>
+        </div>
+    </div>
+  </form>
+</div>

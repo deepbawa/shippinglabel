@@ -1,0 +1,10 @@
+<div class="user-btns">
+  <p *ngIf="showErrorMsg" style="color:red">{{showErrorMsg}}</p>
+  <div *ngIf="currentIndex != 4">
+    <button *ngIf="currentIndex ==1" (click)="previous()">Prev</button>
+    <button (click)="next()">Next</button>
+  </div>
+  <div *ngIf="currentIndex == 4 && !hideComplete" >
+    <button (click)="Complete()">Complete</button>
+  </div>
+</div>
